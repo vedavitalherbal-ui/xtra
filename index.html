@@ -262,21 +262,23 @@
   </footer>
 
   <script>
-    // Direct Redirection on Button Click or Radio Selection
+    // Redirect to v1.html when any age option is selected
     const TARGET_URL = "v1.html";
-    const ctaBtn = document.getElementById('cta-btn');
-    
+    const ctaBtn = document.getElementById("cta-btn");
+    const radioInputs = document.querySelectorAll('input[name="age"]');
+
+    // CTA button always opens v1.html
     if (ctaBtn) {
-      ctaBtn.addEventListener('click', function(e) {
+      ctaBtn.addEventListener("click", function (e) {
         e.preventDefault();
         window.location.href = TARGET_URL;
       });
     }
 
-    const radioInputs = document.querySelectorAll('input[name="age"]');
-    radioInputs.forEach(function(radio) {
-      radio.addEventListener('change', function() {
-        if (ctaBtn) ctaBtn.href = TARGET_URL;
+    // Clicking any age option immediately opens v1.html
+    radioInputs.forEach(function (radio) {
+      radio.addEventListener("change", function () {
+        window.location.href = TARGET_URL;
       });
     });
   </script>

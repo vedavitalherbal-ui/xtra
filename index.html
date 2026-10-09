@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>स्वास्थ्य एवं समाधान</title>
+  <meta name="description" content="स्वास्थ्य संबंधी जानकारी और मार्गदर्शन के लिए आगे बढ़ें।">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{min-height:100%;font-family:Arial,"Noto Sans Devanagari",sans-serif}
+    body{
+      background:linear-gradient(145deg,#f7faf8 0%,#eef7f1 55%,#e7f2eb 100%);
+      color:#173126;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .page{width:100%;max-width:760px}
+    .card{
+      background:rgba(255,255,255,.96);
+      border:1px solid #dce9e1;
+      border-radius:24px;
+      padding:clamp(32px,7vw,68px) clamp(22px,7vw,64px);
+      text-align:center;
+      box-shadow:0 18px 55px rgba(35,72,53,.10);
+    }
+    .badge{
+      display:inline-block;
+      padding:8px 16px;
+      border-radius:999px;
+      background:#e8f5ec;
+      color:#287048;
+      font-size:14px;
+      font-weight:700;
+      margin-bottom:22px;
+    }
+    h1{
+      font-size:clamp(30px,6vw,52px);
+      line-height:1.2;
+      letter-spacing:-.5px;
+      margin-bottom:18px;
+      color:#163d2a;
+    }
+    .intro{
+      max-width:590px;
+      margin:0 auto 30px;
+      color:#587064;
+      font-size:clamp(16px,2.5vw,19px);
+      line-height:1.75;
+    }
+    .points{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+      margin:0 auto 34px;
+      max-width:620px;
+    }
+    .point{
+      background:#f7fbf8;
+      border:1px solid #e3eee7;
+      border-radius:14px;
+      padding:16px 10px;
+      color:#315344;
+      font-size:14px;
+      line-height:1.45;
+    }
+    .icon{font-size:22px;display:block;margin-bottom:7px}
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-width:250px;
+      padding:17px 30px;
+      border-radius:14px;
+      background:#197244;
+      color:#fff;
+      text-decoration:none;
+      font-size:19px;
+      font-weight:800;
+      box-shadow:0 10px 24px rgba(25,114,68,.22);
+      transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
+    }
+    .cta:hover{background:#145f39;transform:translateY(-2px);box-shadow:0 13px 28px rgba(25,114,68,.27)}
+    .cta:active{transform:translateY(0)}
+    .note{
+      margin-top:20px;
+      color:#829188;
+      font-size:12px;
+      line-height:1.5;
+    }
+    @media(max-width:560px){
+      body{padding:14px}
+      .card{border-radius:20px}
+      .points{grid-template-columns:1fr}
+      .point{padding:13px}
+      .cta{width:100%;min-width:0}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="badge">स्वास्थ्य एवं मार्गदर्शन</div>
+      <h1>महिलाएं ऐसा मर्द चाहती हैं जो उनके अंग अंग में तरंग जगाएं</h1>
+      <p class="intro">
+        यदि कोई पुरुष अपनी स्त्री को संतुष्ट नहीं कर सकता है, तो वह अन्य पुरुषों द्वारा संतुष्ट की जाएगी_ 76% महिलाएं अपने पति को धोखा देकर बेवफाई करती हैं...</p>
+
+
+      <a class="cta" href="v1.html">समाधान पाएँ <span aria-hidden="true">&nbsp;→</span></a>
+
+      <p class="note">आगे बढ़ने के लिए ऊपर दिए गए बटन पर क्लिक करें।</p>
+    </section>
+  </main>
+</body>
+</html>
